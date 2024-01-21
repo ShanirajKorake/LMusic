@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                 myRCV.adapter=myAdapter
                 myRCV.layoutManager=LinearLayoutManager(this@MainActivity)
                 Log.d("TAG onResponse", "onResponse: " +response.body())
+
             }
 
             override fun onFailure(call: Call<MData?>, t: Throwable) {
@@ -46,3 +47,4 @@ class MainActivity : AppCompatActivity() {
         })
     }
 }
+
